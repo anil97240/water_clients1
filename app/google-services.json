@@ -1,0 +1,138 @@
+{
+  "project_info": {
+    "project_number": "306766042036",
+    "firebase_url": "https://waterbottle12-e6aa9.firebaseio.com",
+    "project_id": "waterbottle12-e6aa9",
+    "storage_bucket": "waterbottle12-e6aa9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306766042036:android:1b3620446b97f9db",
+        "android_client_info": {
+          "package_name": "com.allysoftsolutions.water_clients1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306766042036-7jm5cos71gn9jr2g1vnrt6oflp5uqnvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoApQaqL6hG2ENbPriOIDomkitxWyZKOY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306766042036:android:6ecffeb2a8e0e629",
+        "android_client_info": {
+          "package_name": "com.example.water_client"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306766042036-hi5t7k6g2noiqete9p77sq3o85el6t1i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.water_client",
+            "certificate_hash": "a349f1e4e3f86c20ab94629998a3265f12f6b082"
+          }
+        },
+        {
+          "client_id": "306766042036-7jm5cos71gn9jr2g1vnrt6oflp5uqnvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoApQaqL6hG2ENbPriOIDomkitxWyZKOY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306766042036-7jm5cos71gn9jr2g1vnrt6oflp5uqnvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:306766042036:android:72d654ad679ddbd2",
+        "android_client_info": {
+          "package_name": "com.example.waterbottle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "306766042036-ekgh5md8j4ecdspa5mt46lej9rh7ofs2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waterbottle",
+            "certificate_hash": "a349f1e4e3f86c20ab94629998a3265f12f6b082"
+          }
+        },
+        {
+          "client_id": "306766042036-p1a477flost7bpir0dvha5hk5u6n01ac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waterbottle",
+            "certificate_hash": "057fc3282522149cde311a1d1c524f78a45762ea"
+          }
+        },
+        {
+          "client_id": "306766042036-7jm5cos71gn9jr2g1vnrt6oflp5uqnvv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoApQaqL6hG2ENbPriOIDomkitxWyZKOY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "306766042036-7jm5cos71gn9jr2g1vnrt6oflp5uqnvv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

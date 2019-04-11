@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_customer"
+        android:icon="@drawable/cus"
+        android:title="Customer" />
+    <item
+        android:id="@+id/action_logout"
+        android:icon="@drawable/logout"
+        android:title="Logout"/>
+    <item
+        android:id="@+id/action_agent"
+        android:icon="@drawable/agent"
+        android:title="Agent" />
+
+    <item
+        android:id="@+id/action_product"
+        android:icon="@drawable/pnm"
+        android:title="Product" />
+
+
+</menu>

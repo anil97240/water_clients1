@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uibackgroud"
+    tools:context=".client_dashboard">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorFAB1"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginRight="80dp"
+            android:text="DashBoard"
+            android:textColor="@color/colorText"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            app:srcCompat="@drawable/titlelogo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <Button
+            android:id="@+id/expandableButton2"
+            android:layout_width="326dp"
+            android:layout_height="99dp"
+            android:layout_below="@+id/expandableLayout1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/expand_button"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton2"
+            android:paddingRight="10dp"
+            android:text="Wait..."
+            android:textColor="@color/colorBackgroud"
+            android:textSize="14sp"
+            tools:ignore="OnClick" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout2"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableButton2"
+            android:background="@drawable/list_view_corner"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="150dp"
+                android:text="    Month            Amount"
+                android:textSize="24dp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvmon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="45dp"
+                android:paddingBottom="100dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvmon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="90dp"
+                android:paddingBottom="100dp"
+                android:textSize="14sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvmon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="135dp"
+                android:paddingBottom="100dp"
+                android:textSize="14sp"
+
+                android:textStyle="bold" />
+
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+        <Button
+            android:id="@+id/totalbtn"
+            android:layout_width="326dp"
+            android:layout_height="99dp"
+            android:layout_below="@+id/expandableLayout2"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/expand_button"
+            android:paddingRight="10dp"
+            android:text="Wait..."
+            android:textColor="@color/colorBackgroud"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/expandableButton1"
+            android:layout_width="326dp"
+            android:layout_height="99dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="103dp"
+            android:background="@drawable/expand_button"
+            android:drawableRight="@android:drawable/arrow_down_float"
+            android:onClick="expandableButton1"
+            android:paddingRight="10dp"
+            android:text="No Data Found"
+            android:textColor="@color/colorBackgroud"
+            android:textSize="14sp" />
+
+        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+            android:id="@+id/expandableLayout1"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/expandableButton1"
+            android:background="@drawable/list_view_corner"
+            android:padding="16dp"
+            app:ael_duration="400"
+            app:ael_expanded="false"
+            app:ael_interpolator="bounce"
+            app:ael_orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="100dp"
+                android:text="      Date             Amount"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/listpadding3"
+                android:layout_width="wrap_content"
+                android:layout_height="300dp"
+                android:paddingTop="30dp"
+
+                />
+        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="53dp"
+        android:layout_toStartOf="@+id/fab"
+        android:layout_toLeftOf="@+id/fab"
+        android:src="@drawable/cart"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/cus"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="84dp"
+        android:src="@drawable/desc"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="77dp"
+        android:src="@drawable/logout"
+        android:visibility="invisible"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/menubar"
+        app:backgroundTint="@color/colorFAB1"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp" />
+
+    <TextView
+        android:id="@+id/tvhide"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/fab3"
+        android:background="@drawable/profilename"
+        android:backgroundTint="@color/fabtext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvagenthide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="64dp"
+        android:layout_toStartOf="@+id/fab3"
+        android:background="@drawable/ordername"
+        android:backgroundTint="@color/fabtext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvhideproduct"
+        android:layout_width="60dp"
+        android:layout_height="41dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="114dp"
+        android:background="@drawable/logoutname"
+        android:backgroundTint="@color/fabtext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvhidelogout"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-52dp"
+        android:layout_marginBottom="111dp"
+        android:layout_toStartOf="@+id/fab3"
+        android:background="@drawable/productname"
+        android:backgroundTint="@color/fabtext"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</RelativeLayout>
