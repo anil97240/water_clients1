@@ -69,7 +69,7 @@ public class SlidingImage_Adapter extends PagerAdapter {
         if(sliding_image.getQry()==null)
         {
             edtbottle.setText("0");
-            Toast.makeText(context, "all values clear null", Toast.LENGTH_SHORT).show();
+
         }
         else {
             edtbottle.setText(sliding_image.getQry());
@@ -77,7 +77,7 @@ public class SlidingImage_Adapter extends PagerAdapter {
         if(sliding_image.getQry()=="")
         {
             edtbottle.setText("0");
-            Toast.makeText(context, "all values clear", Toast.LENGTH_SHORT).show();
+
         }
 
         data=edtbottle.getText().toString();

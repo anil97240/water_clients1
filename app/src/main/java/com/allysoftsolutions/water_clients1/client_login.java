@@ -44,7 +44,6 @@ public class client_login extends AppCompatActivity {
         i1 = findViewById(R.id.imageView2);
         btSignIn = findViewById(R.id.btnlogin);
         editTextMobile = findViewById(R.id.edtmob);
-
         imgv1.setVisibility(View.VISIBLE);
         i1.setVisibility(View.GONE);
         editTextMobile.setVisibility(View.GONE);
@@ -64,7 +63,9 @@ public class client_login extends AppCompatActivity {
             if (mAuth != null) {
                 FirebaseUser user = mAuth.getCurrentUser();
                 String provider = user.getProviders().get(0);
-                if (provider.contains("password")) {
+                if (provider.contains("password"))
+                {
+
                 }
                 if (provider.contains("phone")) {
                     if (provider.contains("phone")) {
@@ -81,6 +82,7 @@ public class client_login extends AppCompatActivity {
         } catch (Exception e) {
             Log.e(TAG, "onCreate: " + e.getMessage());
         }
+
         btSignIn = findViewById(R.id.btnlogin);
         editTextMobile = findViewById(R.id.edtmob);
 

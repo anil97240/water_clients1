@@ -70,7 +70,7 @@ public class client_dashboard extends AppCompatActivity implements View.OnClickL
     EditText edtnm, edtmob, edtadd, edtadd2, edtbarcode;
     ImageView imgview;
     int authint = 0;
-
+    ImageView imgcus;
     private static final int PICK_IMAGE_REQUEST = 234;
     String filedownloadpath = "";
     private Uri filePath;
@@ -130,7 +130,7 @@ public class client_dashboard extends AppCompatActivity implements View.OnClickL
         expandableButton3 = findViewById(R.id.totalbtn);
         expandableButton2 = findViewById(R.id.expandableButton2);
         expandableButton1 = findViewById(R.id.expandableButton1);
-
+        imgcus=findViewById(R.id.imgviewcus);
         tvmonth1 = findViewById(R.id.tvmon1);
         tvmonth2 = findViewById(R.id.tvmon2);
         tvmonth3 = findViewById(R.id.tvmon3);
@@ -185,6 +185,11 @@ public class client_dashboard extends AppCompatActivity implements View.OnClickL
                             sdata = qrcodedata;
 
                             customername = client.getCustomer_name();
+
+                            Picasso.with(getApplicationContext())
+                                    .load(client.getImage())
+                                    .into(imgcus);
+
 
 
                             mDatabaseReference = FirebaseDatabase.getInstance().getReference("collected_amount");
@@ -440,6 +445,13 @@ public class client_dashboard extends AppCompatActivity implements View.OnClickL
         } else {
 
         }
+        imgcus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showCustomDialog();
+            }
+        });
+
     }
     public void expandableButton1(View view) {
 
@@ -452,6 +464,8 @@ public class client_dashboard extends AppCompatActivity implements View.OnClickL
        /* expandableLayout2 = (ExpandableRelativeLayout) findViewById(R.id.expandableLayout2);
         expandableLayout2.toggle(); // toggle expand and collapse*/
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -538,6 +552,11 @@ public class client_dashboard extends AppCompatActivity implements View.OnClickL
             Picasso.with(getApplicationContext())
                     .load(client.getImage())
                     .into(imgview);
+
+                Picasso.with(getApplicationContext())
+                        .load(client.getImage())
+                        .into(imgcus);
+
         }
         //client profile
         view.findViewById(R.id.btnallclient).setOnClickListener(new View.OnClickListener() {
@@ -647,7 +666,6 @@ public class client_dashboard extends AppCompatActivity implements View.OnClickL
             if (filedownloadpath.equals("")) {
 
             } else {
-
                 Picasso.with(getApplicationContext())
                         .load(filedownloadpath)
                         .into(imgview);

@@ -177,7 +177,7 @@ public class customer_order extends AppCompatActivity {
             try {
                 if (slid_img.get(i).getQry().equals("0")) {
 
-                    Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "No data found", Toast.LENGTH_SHORT).show();
                 } else {
                     //add product data
                     Firebase.setAndroidContext(this);
@@ -207,7 +207,7 @@ public class customer_order extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         int s = Integer.parseInt(tvqty.getText().toString());
         if (s == 0) {
-            Snackbar snackbar1 = Snackbar.make(coordinatorLayout, "No Bottles In Cart", Snackbar.LENGTH_SHORT);
+          Snackbar snackbar1 = Snackbar.make(coordinatorLayout, "No Bottles In Cart", Snackbar.LENGTH_SHORT);
             snackbar1.show();
         } else {
             //date of order

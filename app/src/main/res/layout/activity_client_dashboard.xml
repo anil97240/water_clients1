@@ -11,27 +11,39 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:background="@color/colorFAB1"
         android:orientation="vertical"
-        android:paddingLeft="20dp"
-
-        android:paddingRight="20dp">
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="166dp"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="130dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="15dp"
             android:layout_marginRight="80dp"
             android:text="DashBoard"
             android:textColor="@color/colorText"
             android:textSize="30sp"
             android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgviewcus"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/cus"
+            app:civ_border_color="@color/fabtext"
+            app:civ_border_width="3dp" />
+
+
 
         <ImageView
             android:id="@+id/imageView3"
@@ -40,15 +52,18 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
             android:layout_marginRight="18dp"
             app:srcCompat="@drawable/titlelogo" />
+
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:paddingLeft="30dp"
         android:paddingRight="30dp">
 
@@ -59,7 +74,6 @@
             android:layout_below="@+id/expandableLayout1"
             android:layout_marginTop="20dp"
             android:background="@drawable/expand_button"
-            android:drawableRight="@android:drawable/arrow_down_float"
             android:onClick="expandableButton2"
             android:paddingRight="10dp"
             android:text="Wait..."
